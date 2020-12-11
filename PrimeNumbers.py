@@ -9,8 +9,7 @@ def checkPrime(num):
     if(count == 2):
         primeList.append(num)
     if(len(primeList) == maxLimit):
-        for primes in primeList:
-            print(primes, end=" ")
+        print(*primeList, sep=",")
     else:
         num += 1
         checkPrime(num)
@@ -25,16 +24,3 @@ else:
 
 
 
-
-
-
-# num = int(input("Enter number "))
-# p = 2
-# while num != 0:
-    # for i in range(2, p):
-        # if p % i == 0:
-            # break
-    # else:
-        # print(p, end=" ")
-        # num -= 1
-    # p += 1
